@@ -1,0 +1,19 @@
+# MacPorts
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export MANPATH=/opt/local/share/pan:$MANPATH
+
+# Colors
+eval `gdircolors ~/.dir_colors`
+alias ls='gls --color=auto'
+alias grep='grep --color=auto'
+
+# Better safe than sorry
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# QuickLook
+alias ql='qlmanage -p'
+
+# Network home dir's bin
+export PATH=~/x/bin:$PATH
