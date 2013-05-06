@@ -4,7 +4,7 @@ set fileencoding=utf8
 set encoding=utf8
 set textwidth=0
 set wrapmargin=0
-set mouse=a           " mouse support
+"set mouse=a           " mouse support
 set number            " line numbering
 set scrolloff=5       " always keep some lines above/below the cursor
 set ruler             " show current position in file on lower right
