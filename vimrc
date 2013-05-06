@@ -11,7 +11,7 @@ set ruler             " show current position in file on lower right
 set hlsearch          " highlight search results
 set cursorline        " show current line with a horizontal rule
 set incsearch         " update search results while typing
-set pastetoggle=<F2>  " don't auotmatically indent when pasting!
+set pastetoggle=<F2>  " don't automatically indent when pasting!
 set t_Co=256          " Support 256 colors
 colorscheme wombat256 " Alternate color scheme
 
