@@ -18,3 +18,10 @@ eval $(dircolors -b ~/.dir_colors)
 # Fix common typos
 alias s=ls
 alias l=ls
+alias sl=ls
+alias clera=clear
+alias clc=clear
+alias clearls='clear;ls'
+alias lcoate=locate
+alias fiel=file
+alias mdkir=mkdir
