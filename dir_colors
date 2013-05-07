@@ -185,7 +185,6 @@ EXEC 01;32
 .xsl 00;33
 .css 00;33
 .eml 00;33
-.spx 00;33
 
 # Plaintext data files
 .yml 00;33
@@ -195,6 +194,8 @@ EXEC 01;32
 .json 00;33
 .md5 00;33
 .gan 00;33
+.spx 00;33
+.panic 00;33
 
 # Plaintext source files
 .sh 00;33
