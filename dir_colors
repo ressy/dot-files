@@ -1,7 +1,8 @@
-# 2010-05-12
+# 2013-05-07
+#  
 # Configuration file for dircolors, a utility to help you set the
 # LS_COLORS environment variable used by GNU ls with the --color option.
-
+# 
 # Copyright (C) 1996, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006
 # Free Software Foundation, Inc.
 # Copying and distribution of this file, with or without modification,
@@ -71,13 +72,7 @@ BLK 40;33;01	# block device driver
 CHR 40;33;01	# character device driver
 ORPHAN 01;05;37;41  # orphaned syminks
 MISSING 01;05;37;41 # ... and the files they point to
-
-# This is for files with execute permission:
-EXEC 01;32
-
-# List any file extensions like '.gz' or '.tar' that you would like ls
-# to colorize below. Put the extension, a space, and the color init string.
-# (and any comments you want to add after a '#')
+EXEC 01;32      # This is for files with execute permission
 
 # If you use DOS-style suffixes, you may want to uncomment the following:
 #.cmd 01;32 # executables (bright green)
@@ -110,12 +105,12 @@ EXEC 01;32
 .cpio 00;31
 .7z  00;31
 .rz  00;31
-###
+
 .deb 00;31
 .rpm 00;31
 .jar 00;31
 .xpi 00;31
-###
+
 .iso 00;31
 .img 00;31
 .wim 00;31
