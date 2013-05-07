@@ -1,0 +1,20 @@
+# Various shared .bashrc settings
+# ###########
+
+# Ask before destroying stuff
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Default to human readable figures
+alias df='df -h'
+alias du='du -h'
+
+# Color support wherever possible
+alias grep='grep --color'
+alias ls='ls --color=auto'
+eval $(dircolors -b ~/.dir_colors)
+
+# Fix common typos
+alias s=ls
+alias l=ls
