@@ -11,9 +11,30 @@ alias df='df -h'
 alias du='du -h'
 
 # Color support wherever possible
+# Try GNU-style ls color
+unalias ls
+if ls --color=auto / &> /dev/null
+then
+	alias ls='ls --color=auto'
+# Or maybe it's installed as gls?
+elif gls --color=auto / &> /dev/null 
+then
+	alias ls='gls --color=auto'
+# OK, maybe BSD-style?
+elif ls -G / &> /dev/null
+then
+	alias ls='ls -G'
+fi
+# Note that this only works with GNU ls;
+# LSCOLORS is used on BSD
+if hash dircolors &> /dev/null
+then
+	eval $(dircolors -b ~/.dir_colors)
+elif hash gdircolors &> /dev/null
+then
+	eval $(gdircolors -b ~/.dir_colors)
+fi
 alias grep='grep --color'
-alias ls='ls --color=auto'
-eval $(dircolors -b ~/.dir_colors)
 
 # Fix common typos
 alias s=ls
