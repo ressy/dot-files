@@ -12,7 +12,7 @@ alias du='du -h'
 
 # Color support wherever possible
 # Try GNU-style ls color
-unalias ls
+unalias ls &> /dev/null
 if ls --color=auto / &> /dev/null
 then
 	alias ls='ls --color=auto'
