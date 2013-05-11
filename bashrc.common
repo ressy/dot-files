@@ -20,6 +20,10 @@ then
 elif gls --color=auto / &> /dev/null 
 then
 	alias ls='gls --color=auto'
+# Or maybe gnuls?
+elif gnuls --color=auto / &> /dev/null
+then
+	alias ls='gnuls --color=auto'
 # OK, maybe BSD-style?
 elif ls -G / &> /dev/null
 then
