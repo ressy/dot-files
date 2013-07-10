@@ -232,6 +232,7 @@ EXEC 01;32      # This is for files with execute permission
 .rc 00;33
 .m3u 00;33
 .m3u8 00;33
+.md 00;33
 
 .bashrc 00;33
 .bash_profile 00;33
