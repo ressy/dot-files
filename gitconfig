@@ -1,0 +1,6 @@
+# http://git-scm.com/book/en/Customizing-Git-Git-Configuration
+[user]
+	name = Jesse Connell
+	email = jesse08@gmail.com
+[color]
+	ui = true
