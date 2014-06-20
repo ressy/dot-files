@@ -115,6 +115,7 @@ CHR 40;33;01	# character device driver
 ORPHAN 01;05;37;41  # orphaned syminks
 MISSING 01;05;37;41 # ... and the files they point to
 EXEC 01;32      # This is for files with execute permission
+OTHER_WRITABLE 01;04;34 # For files writeable by others
 
 # archives, disk images, or compressed
 .tar 00;31
