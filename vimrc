@@ -33,7 +33,6 @@ autocmd FileType ruby set tabstop=2
 autocmd FileType ruby set softtabstop=2
 autocmd FileType ruby set shiftwidth=2
 
-
 """ Python settings
 autocmd FileType python set foldmethod=indent
 autocmd FileType python set autoindent
@@ -41,6 +40,13 @@ autocmd FileType python set expandtab
 autocmd FileType python set tabstop=4
 autocmd FileType python set softtabstop=4
 autocmd FileType python set shiftwidth=4
+
+""" Code Folding
+" http://smartic.us/2009/04/06/code-folding-in-vim/
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+"set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
 
 "highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 "match OverLength /\%81v.\+/
