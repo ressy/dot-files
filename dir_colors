@@ -114,7 +114,8 @@ BLK 40;33;01	# block device driver
 CHR 40;33;01	# character device driver
 ORPHAN 01;05;37;41  # orphaned syminks
 MISSING 01;05;37;41 # ... and the files they point to
-EXEC 01;32      # This is for files with execute permission
+#EXEC 01;32      # This is for files with execute permission
+EXEC 00      # This is for files with execute permission -- ignore it
 OTHER_WRITABLE 01;04;34 # For files writeable by others
 
 # archives, disk images, or compressed
@@ -226,6 +227,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 
 # Plaintext source files
 .sh 00;33
+.csh 00;33
 .rb 00;33
 .py 00;33
 .m 00;33
@@ -243,6 +245,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .R 00;33
 .mk 00;33
 .prj 00;33
+.cron 00;33
 *Makefile 00;33
 
 # Other plaintext files
