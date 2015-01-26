@@ -41,6 +41,13 @@ autocmd FileType python set tabstop=4
 autocmd FileType python set softtabstop=4
 autocmd FileType python set shiftwidth=4
 
+""" YAML settings
+autocmd FileType yaml set ff=unix
+autocmd FileType yaml set ts=2
+autocmd FileType yaml set sw=2
+autocmd FileType yaml set ai
+autocmd FileType yaml set expandtab
+
 """ Code Folding
 " http://smartic.us/2009/04/06/code-folding-in-vim/
 set foldmethod=indent   "fold based on indent
