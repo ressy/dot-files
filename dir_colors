@@ -149,6 +149,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .rpm 00;91
 .jar 00;91
 .xpi 00;91
+.gem 00;91
 
 # Image formats
 .bmp 00;35
@@ -314,6 +315,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .hdu 01;30
 .sig 01;30
 .RData 01;30
+.fsp 01;30
 
 # audio formats
 .aac 00;36
