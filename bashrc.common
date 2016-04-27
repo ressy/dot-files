@@ -47,6 +47,7 @@ alias sl=ls
 alias clera=clear
 alias clc=clear
 alias clearls='clear;ls'
+alias lls='clear;ls'
 alias lcoate=locate
 alias fiel=file
 alias mdkir=mkdir
