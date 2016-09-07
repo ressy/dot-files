@@ -15,6 +15,8 @@ set pastetoggle=<F2>  " don't automatically indent when pasting!
 set t_Co=256          " Support 256 colors
 colorscheme wombat256 " Alternate color scheme
 set vb t_vb=          " No bell.  I hate the bell.
+set nobackup          " Don't do the filename~ thing.
+set noundofile        " ... or the filename.un~ thing.
 
 """ HTML Settings
 au BufNewFile,BufRead *.htm  set filetype=html
