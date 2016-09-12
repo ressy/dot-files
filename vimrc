@@ -21,6 +21,7 @@ set noundofile        " ... or the filename.un~ thing.
 """ HTML Settings
 au BufNewFile,BufRead *.htm  set filetype=html
 au BufNewFile,BufRead *.html set filetype=html
+au BufNewFile,BufRead *.twig set filetype=html
 autocmd FileType html set autoindent
 autocmd FileType html set expandtab 
 autocmd FileType html set tabstop=2
