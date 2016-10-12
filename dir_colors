@@ -292,6 +292,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .vimperatorrc 00;33
 .gitconfig 00;33
 .flexlmrc 00;33
+.nvidia-settings-rc 00;33
 
 # binary executable/library files
 .exe 01;30
