@@ -291,6 +291,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .xscreensaver 00;33
 .vimperatorrc 00;33
 .gitconfig 00;33
+.flexlmrc 00;33
 
 # binary executable/library files
 .exe 01;30
