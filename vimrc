@@ -15,6 +15,8 @@ set pastetoggle=<F2>  " don't automatically indent when pasting!
 set t_Co=256          " Support 256 colors
 colorscheme wombat256 " Alternate color scheme
 set vb t_vb=          " No bell.  I hate the bell.
+set nobackup          " Don't do the filename~ thing.
+set noundofile        " ... or the filename.un~ thing.
 
 """ HTML Settings
 au BufNewFile,BufRead *.htm  set filetype=html
@@ -22,7 +24,7 @@ au BufNewFile,BufRead *.html set filetype=html
 au BufNewFile,BufRead *.twig set filetype=html
 au BufNewFile,BufRead *.liquid set filetype=html
 autocmd FileType html set autoindent
-autocmd FileType html set expandtab 
+autocmd FileType html set expandtab
 autocmd FileType html set tabstop=2
 autocmd FileType html set softtabstop=2
 autocmd FileType html set shiftwidth=2
@@ -32,7 +34,7 @@ au BufNewFile,BufRead *.css.liquid set filetype=css
 """ Ruby settings
 au BufNewFile,BufRead *.erb set filetype=eruby
 autocmd FileType ruby set autoindent
-autocmd FileType ruby set expandtab 
+autocmd FileType ruby set expandtab
 autocmd FileType ruby set tabstop=2
 autocmd FileType ruby set softtabstop=2
 autocmd FileType ruby set shiftwidth=2
@@ -51,6 +53,14 @@ autocmd FileType yaml set ts=2
 autocmd FileType yaml set sw=2
 autocmd FileType yaml set ai
 autocmd FileType yaml set expandtab
+
+""" Diagram settings
+au BufNewFile,BufRead *.diag set filetype=diagram
+autocmd FileType diagram set autoindent
+autocmd FileType diagram set expandtab
+autocmd FileType diagram set tabstop=2
+autocmd FileType diagram set softtabstop=2
+autocmd FileType diagram set shiftwidth=2
 
 """ Code Folding
 " http://smartic.us/2009/04/06/code-folding-in-vim/

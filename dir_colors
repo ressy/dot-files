@@ -169,6 +169,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .pcx 00;35
 .ico 00;35
 .psd 00;35
+.svg 00;35
 
 # Video formats
 .mov 00;35
@@ -243,6 +244,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .nse 00;33
 .cc 00;33
 .c 00;33
+.cu 00;33
 .h 00;33
 .R 00;33
 .mk 00;33
@@ -289,6 +291,8 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .xscreensaver 00;33
 .vimperatorrc 00;33
 .gitconfig 00;33
+.flexlmrc 00;33
+.nvidia-settings-rc 00;33
 
 # binary executable/library files
 .exe 01;30
