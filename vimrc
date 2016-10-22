@@ -20,11 +20,14 @@ set vb t_vb=          " No bell.  I hate the bell.
 au BufNewFile,BufRead *.htm  set filetype=html
 au BufNewFile,BufRead *.html set filetype=html
 au BufNewFile,BufRead *.twig set filetype=html
+au BufNewFile,BufRead *.liquid set filetype=html
 autocmd FileType html set autoindent
 autocmd FileType html set expandtab 
 autocmd FileType html set tabstop=2
 autocmd FileType html set softtabstop=2
 autocmd FileType html set shiftwidth=2
+
+au BufNewFile,BufRead *.css.liquid set filetype=css
 
 """ Ruby settings
 au BufNewFile,BufRead *.erb set filetype=eruby
