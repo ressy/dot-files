@@ -233,6 +233,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .csh 00;33
 .rb 00;33
 .py 00;33
+.pl 00;33
 .m 00;33
 .lua 00;33
 .erb 00;33
