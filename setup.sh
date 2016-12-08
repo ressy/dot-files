@@ -3,7 +3,7 @@
 DIR=".dot-files"
 DIRPATH=$(readlink -f "$(dirname "$0")")
 
-for target in dir_colors vimrc irbrc pythonrc.py vim vimrc
+for target in dir_colors vimrc irbrc pythonrc.py vim vimrc screenrc
 do
 	[ -e ~/.$target ] || ln -s $DIR/$target ~/.$target
 done
