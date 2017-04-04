@@ -62,6 +62,17 @@ autocmd FileType diagram set tabstop=2
 autocmd FileType diagram set softtabstop=2
 autocmd FileType diagram set shiftwidth=2
 
+""" Snakemake settings
+au BufNewFile,BufRead Snakefile   set syntax=snakemake filetype=snakemake
+au BufNewFile,BufRead *.rules     set syntax=snakemake filetype=snakemake
+au BufNewFile,BufRead *.snakefile set syntax=snakemake filetype=snakemake
+au BufNewFile,BufRead *.snake     set syntax=snakemake filetype=snakemake
+autocmd FileType snakemake set autoindent
+autocmd FileType snakemake set expandtab
+autocmd FileType snakemake set tabstop=4
+autocmd FileType snakemake set softtabstop=4
+autocmd FileType snakemake set shiftwidth=4
+
 """ Code Folding
 " http://smartic.us/2009/04/06/code-folding-in-vim/
 set foldmethod=indent   "fold based on indent
