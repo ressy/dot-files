@@ -227,6 +227,9 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .gan 00;33
 .spx 00;33
 .panic 00;33
+.fasta 00;33
+.fastq 00;33
+.fa 00;33
 
 # Plaintext source files
 .sh 00;33
@@ -266,6 +269,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .diff 00;33
 .txt 00;33
 .csv 00;33
+.tsv 00;33
 .log 00;33
 .url 00;33
 .hex 00;33
@@ -325,6 +329,9 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .sig 01;30
 .RData 01;30
 .fsp 01;30
+.bam 01;30
+.bai 01;30
+.bcf 01;30
 
 # audio formats
 .aac 00;36
