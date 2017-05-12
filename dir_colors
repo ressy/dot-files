@@ -251,7 +251,9 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .mk 00;33
 .prj 00;33
 .cron 00;33
+.rules 00;33
 *Makefile 00;33
+*Snakefile 00;33
 
 # Other plaintext files
 .desktop 00;33
