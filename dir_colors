@@ -216,6 +216,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .css 00;33
 .eml 00;33
 .twig 00;33
+.liquid 00;33
 
 # Plaintext data files
 .yml 00;33
