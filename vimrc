@@ -73,6 +73,12 @@ autocmd FileType snakemake set tabstop=4
 autocmd FileType snakemake set softtabstop=4
 autocmd FileType snakemake set shiftwidth=4
 
+""" R settings
+autocmd FileType r set ts=2
+autocmd FileType r set sw=2
+autocmd FileType r set ai
+autocmd FileType r set expandtab
+
 """ Code Folding
 " http://smartic.us/2009/04/06/code-folding-in-vim/
 set foldmethod=indent   "fold based on indent
