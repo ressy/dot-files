@@ -1,0 +1,1 @@
+../../bioSyntax-vim/vcf.vim

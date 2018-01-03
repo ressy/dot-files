@@ -1,0 +1,1 @@
+../../bioSyntax-vim/fasta-hc.vim
