@@ -10,6 +10,12 @@ alias mv='mv -i'
 alias df='df -h'
 alias du='du -h'
 
+# Some git shortcuts
+alias gs='git status' # eh, I don't care about ghostscript. \gs would work.
+alias gs.='git status .'
+alias ga='git add'
+alias gd='git diff'
+
 # Color support wherever possible
 # Try GNU-style ls color
 unalias ls &> /dev/null
@@ -52,3 +58,18 @@ alias lcoate=locate
 alias fiel=file
 alias mdkir=mkdir
 alias wc-l='wc -l'
+
+function csvless()
+{
+	csvtool readable $1 | less -S
+}
+
+function scplink()
+{
+	echo $(hostname -f):$(readlink -f "$1")
+}
+
+function rstudiolink()
+{
+	echo https://$(hostname -f)/rstudio/file_show?path=$(readlink -f "$1")
+}
