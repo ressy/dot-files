@@ -252,6 +252,7 @@ OTHER_WRITABLE 01;04;34 # For files writeable by others
 .cu 00;33
 .h 00;33
 .R 00;33
+.Rmd 00;33
 .mk 00;33
 .prj 00;33
 .cron 00;33
