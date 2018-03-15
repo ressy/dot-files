@@ -1,3 +1,11 @@
 # Various shared .bash_profile settings
 
 export EDITOR=vim
+
+test -d "$HOME/bin" && export PATH="$HOME/bin:$PATH"
+
+# History settings as recommended by Kevin
+export HISTCONTROL=ignoreboth:erasedups
+export HISTSIZE=10000
+export HISTFILESIZE=20000
+export HISTTIMEFORMAT="%h %d %H:%M:%S> "
