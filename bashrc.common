@@ -73,3 +73,14 @@ function rstudiolink()
 {
 	echo https://$(hostname -f)/rstudio/file_show?path=$(readlink -f "$1")
 }
+
+
+# Trim out the code blocks in Rmd text, spell check, and return unique word
+# list
+function rmdspell() {
+	awk '/```/{skip=!skip} { if (! skip) {print $0} }' | aspell list | sort -u
+}
+
+# TODO
+# include git info in the bash prompt
+# http://codeinthehole.com/tips/pull-requests-and-other-good-practices-for-teams-using-github/
