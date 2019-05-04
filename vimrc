@@ -30,6 +30,7 @@ autocmd FileType html set softtabstop=2
 autocmd FileType html set shiftwidth=2
 
 au BufNewFile,BufRead *.css.liquid set filetype=css
+au BufNewFile,BufRead *.js.liquid set filetype=javascript
 
 """ Ruby settings
 au BufNewFile,BufRead *.erb set filetype=eruby
