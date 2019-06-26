@@ -81,6 +81,8 @@ function rmdspell() {
 	awk '/```/{skip=!skip} { if (! skip) {print $0} }' | aspell list | sort -u
 }
 
+alias revcmp='rev | tr "[ACGT]" "[TGCA]"'
+
 # Ugh Illumina sample sheets tend to be a mess of weird line endings and have missing ending newlines.
 # This is a rough attempt to clean those up.
 function ss {
