@@ -1,5 +1,6 @@
 syntax enable
 filetype plugin indent on
+set laststatus=2      " always show status line
 set fileencoding=utf8
 set encoding=utf8
 set textwidth=0
@@ -80,6 +81,12 @@ autocmd FileType snakemake set expandtab
 autocmd FileType snakemake set tabstop=4
 autocmd FileType snakemake set softtabstop=4
 autocmd FileType snakemake set shiftwidth=4
+
+""" R settings
+autocmd FileType r set ts=2
+autocmd FileType r set sw=2
+autocmd FileType r set ai
+autocmd FileType r set expandtab
 
 """ Code Folding
 " http://smartic.us/2009/04/06/code-folding-in-vim/
