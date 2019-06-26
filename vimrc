@@ -19,6 +19,9 @@ set vb t_vb=          " No bell.  I hate the bell.
 set nobackup          " Don't do the filename~ thing.
 set noundofile        " ... or the filename.un~ thing.
 
+" Quick-fix command for uses spaces in shell scripts
+command Shsp :set expandtab |:set tabstop=4 |:set softtabstop=4 |:set shiftwidth=4
+
 """ HTML Settings
 au BufNewFile,BufRead *.htm  set filetype=html
 au BufNewFile,BufRead *.html set filetype=html
