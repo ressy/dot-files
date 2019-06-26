@@ -93,6 +93,15 @@ function ss {
 # https://askubuntu.com/a/1012236
 grep -q ^vim$ /proc/$PPID/comm && export PS1="<VIM> $PS1"
 
+# https://askubuntu.com/questions/1042234/modifying-the-color-of-grep
+alias    grep_red="GREP_COLORS='ms=01;31'  grep --color=always"
+alias  grep_green="GREP_COLORS='ms=01;32'  grep --color=always"
+alias grep_yellow="GREP_COLORS='ms=01;33'  grep --color=always"
+alias   grep_blue="GREP_COLORS='ms=01;34'  grep --color=always"
+alias grep_purple="GREP_COLORS='ms=01;35'  grep --color=always"
+alias   grep_cyan="GREP_COLORS='ms=01;36'  grep --color=always"
+alias grep_invert="GREP_COLORS='ms=107;30' grep --color=always"
+
 # TODO
 # include git info in the bash prompt
 # http://codeinthehole.com/tips/pull-requests-and-other-good-practices-for-teams-using-github/
