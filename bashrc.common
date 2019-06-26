@@ -81,6 +81,12 @@ function rmdspell() {
 	awk '/```/{skip=!skip} { if (! skip) {print $0} }' | aspell list | sort -u
 }
 
+# Ugh Illumina sample sheets tend to be a mess of weird line endings and have missing ending newlines.
+# This is a rough attempt to clean those up.
+function ss {
+	cat "$1" | mac2unix | dos2unix | cat - <(echo)
+}
+
 # TODO
 # include git info in the bash prompt
 # http://codeinthehole.com/tips/pull-requests-and-other-good-practices-for-teams-using-github/
