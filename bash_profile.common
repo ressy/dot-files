@@ -1,6 +1,7 @@
 # Various shared .bash_profile settings
 
 export EDITOR=vim
+export PAGER=less
 
 test -d "$HOME/bin" && export PATH="$HOME/bin:$PATH"
 
