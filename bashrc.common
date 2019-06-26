@@ -102,6 +102,23 @@ alias grep_purple="GREP_COLORS='ms=01;35'  grep --color=always"
 alias   grep_cyan="GREP_COLORS='ms=01;36'  grep --color=always"
 alias grep_invert="GREP_COLORS='ms=107;30' grep --color=always"
 
+# zero out the timestamp in a gzipped file as though it had been created with
+# gzip -n from the start
+function gzipstrip {
+	fp=$1
+	if [[ $(head -c 2 $fp) == $(echo -e "\x1f\x8b") ]]; then
+		if [[ $(dd status=none if=$fp bs=1 count=4 skip=4) == $(echo -e "\x00\x00\x00\x00") ]]; then
+			echo "already stripped: $fp" > /dev/stderr
+			return 1
+		else
+			dd status=none if=/dev/zero of=$fp bs=1 count=4 seek=4 conv=notrunc
+		fi
+	else
+		echo "not gzipped: $fp" > /dev/stderr
+		return 2
+	fi
+}
+
 # TODO
 # include git info in the bash prompt
 # http://codeinthehole.com/tips/pull-requests-and-other-good-practices-for-teams-using-github/
