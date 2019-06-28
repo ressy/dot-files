@@ -100,3 +100,6 @@ set foldlevel=1         "this is just what i use
 
 "highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 "match OverLength /\%81v.\+/
+
+" https://github.com/vim-syntastic/syntastic
+execute pathogen#infect()
