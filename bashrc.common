@@ -81,14 +81,6 @@ function rmdspell() {
 	awk '/```/{skip=!skip} { if (! skip) {print $0} }' | aspell list | sort -u
 }
 
-alias revcmp='rev | tr "[ACGT]" "[TGCA]"'
-
-# Ugh Illumina sample sheets tend to be a mess of weird line endings and have missing ending newlines.
-# This is a rough attempt to clean those up.
-function ss {
-	cat "$1" | mac2unix | dos2unix | cat - <(echo)
-}
-
 # Are we inside vim?  I can never keep track of when I've done a :sh.
 # https://askubuntu.com/a/1012236
 grep -q ^vim$ /proc/$PPID/comm && export PS1="<VIM> $PS1"
@@ -119,6 +111,7 @@ function gzipstrip {
 	fi
 }
 
+source "$DOTFILES/bio/bio.sh"
 # TODO
 # include git info in the bash prompt
 # http://codeinthehole.com/tips/pull-requests-and-other-good-practices-for-teams-using-github/

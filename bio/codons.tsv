@@ -1,0 +1,18 @@
+				2		
+1	T		C		A		G		3
+T	TTT	Phe	TCT	Ser	TAT	Tyr	TGT	Cys	T
+T	TTC	Phe	TCC	Ser	TAC	Tyr	TGC	Cys	C
+T	TTA	Leu	TCA	Ser	TAA	Stop	TGA	Stop	A
+T	TTG	Leu	TCG	Ser	TAG	Stop	TGG	Trp	G
+C	CTT	Leu	CCT	Pro	CAT	His	CGT	Arg	T
+C	CTC	Leu	CCC	Pro	CAC	His	CGC	Arg	C
+C	CTA	Leu	CCA	Pro	CAA	Gln	CGA	Arg	A
+C	CTG	Leu	CCG	Pro	CAG	Gln	CGG	Arg	G
+A	ATT	Ile	ACT	Thr	AAT	Asn	AGT	Ser	T
+A	ATC	Ile	ACC	Thr	AAC	Asn	AGC	Ser	C
+A	ATA	Ile	ACA	Thr	AAA	Lys	AGA	Arg	A
+A	ATG	Met	ACG	Thr	AAG	Lys	AGG	Arg	G
+G	GTT	Val	GCT	Ala	GAT	Asp	GGT	Gly	T
+G	GTC	Val	GCC	Ala	GAC	Asp	GGC	Gly	C
+G	GTA	Val	GCA	Ala	GAA	Glu	GGA	Gly	A
+G	GTG	Val	GCG	Ala	GAG	Glu	GGG	Gly	G

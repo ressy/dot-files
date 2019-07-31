@@ -1,5 +1,6 @@
 # Various shared .bash_profile settings
 
+export DOTFILES=$(dirname $( (readlink -f "$BASH_SOURCE" || greadlink -f "$BASH_SOURCE") 2> /dev/null))
 export EDITOR=vim
 export PAGER=less
 
