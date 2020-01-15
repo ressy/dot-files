@@ -83,7 +83,11 @@ function rmdspell() {
 
 # Are we inside vim?  I can never keep track of when I've done a :sh.
 # https://askubuntu.com/a/1012236
-grep -q ^vim$ /proc/$PPID/comm && export PS1="<VIM> $PS1"
+# (On certain systems we won't have /proc mounted so we'll check first to avoid
+# spurious errors.)
+if [[ -e /proc/$PPID/comm ]]; then
+	grep -q ^vim$ /proc/$PPID/comm && export PS1="<VIM> $PS1"
+fi
 
 # https://askubuntu.com/questions/1042234/modifying-the-color-of-grep
 alias    grep_red="GREP_COLORS='ms=01;31'  grep --color=always"
