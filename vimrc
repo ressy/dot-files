@@ -79,6 +79,7 @@ au BufNewFile,BufRead Snakefile   set syntax=snakemake filetype=snakemake
 au BufNewFile,BufRead *.rules     set syntax=snakemake filetype=snakemake
 au BufNewFile,BufRead *.snakefile set syntax=snakemake filetype=snakemake
 au BufNewFile,BufRead *.snake     set syntax=snakemake filetype=snakemake
+au BufNewFile,BufRead *.smk       set syntax=snakemake filetype=snakemake
 autocmd FileType snakemake set autoindent
 autocmd FileType snakemake set expandtab
 autocmd FileType snakemake set tabstop=4
