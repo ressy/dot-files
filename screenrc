@@ -1,3 +1,5 @@
 vbell off
 bell_msg ""
 startup_message off
+defscrollback 100000
+hardstatus alwayslastline '%{= kg}[ %{G}%H %{g}][%= %{= kB}%?%-Lw%?%{+b r}(%{G}%n*%f %t%?(%u)%?%{r})%{-b B}%?%+Lw%?%?%= %{g}%]'
