@@ -21,3 +21,25 @@ alias revcmp='rev | tr "[ACGT]" "[TGCA]"'
 function ss {
 	cat "$1" | mac2unix | dos2unix | cat - <(echo)
 }
+
+function translate {
+	sed -r 's/(...)/\1\n/g' | while read codon; do
+		if $(echo $codon | grep -q -- -); then
+			aa_abbr="???"
+			aa_letter="X"
+		elif [[ ${#codon} -ne 3 ]]; then
+			aa_abbr="???"
+			aa_letter="X"
+		else
+			aa_abbr=$(codons | grep -o "$codon ..." | cut -f 2 -d ' ')
+			if [[ "$aa_abbr" == "Sto" ]]; then
+				aa_letter="*"
+			elif [[ "$aa_abbr" != "" ]]; then
+				aa_letter=$(aminoacids | grep " $aa_abbr" | sed "s/ acid//" | tr -s ' ' | cut -f 2 -d ' ')
+			else
+				aa_letter="X"
+			fi
+		fi
+		echo -e "$codon\t$aa_abbr\t$aa_letter"
+	done
+}
