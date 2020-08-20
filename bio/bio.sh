@@ -14,6 +14,7 @@ function aminoacids { echo "$AMINOACIDS" | csvtool readable - -t TAB; }
 function codons { echo "$CODONS" | csvtool readable - -t TAB; }
 function codons_inverse { echo "$CODONS_INVERSE" | csvtool readable - -t TAB; }
 
+# DNA reverse complement
 alias revcmp='rev | tr "[ACGT]" "[TGCA]"'
 
 # Ugh Illumina sample sheets tend to be a mess of weird line endings and have missing ending newlines.
@@ -22,6 +23,8 @@ function ss {
 	cat "$1" | mac2unix | dos2unix | cat - <(echo)
 }
 
+# A slow and longwinded nucleotide to amino acid translation.  Can be helpful
+# for troubleshooting.
 function translate {
 	sed -r 's/(...)/\1\n/g' | while read codon; do
 		if $(echo $codon | grep -q -- -); then
@@ -42,4 +45,22 @@ function translate {
 		fi
 		echo -e "$codon\t$aa_abbr\t$aa_letter"
 	done
+}
+
+# Generate a string of random nucleotides of a given length
+function random_nt {
+	len=$1
+	ctr=0
+	# Note that this goofy method breaks as soon as you hit 10 things to
+	# replace
+	while [[ $ctr -lt len ]]; do
+		echo $((RANDOM % 4 + 1))
+		ctr=$((ctr + 1))
+	done | tr 1234 ACTG | tr -d '\n'
+	echo
+}
+
+# Quick FASTA MSA with defaults
+function align {
+	clustalw2 -align -infile=$1 -output=fasta =outfile=${1}.aln.fasta
 }
