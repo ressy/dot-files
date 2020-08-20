@@ -115,6 +115,10 @@ function gzipstrip {
 	fi
 }
 
+function vec_sum {
+	awk '{sum+=$1}END{print sum}'
+}
+
 source "$DOTFILES/bio/bio.sh"
 # TODO
 # include git info in the bash prompt
